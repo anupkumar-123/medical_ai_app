@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediacl AI</title>
+</head>
+<body>
+    <h1>Medical AI Presdiction</h1>
+
+    <h2>Diabetes</h2>
+
+    <form action="/predict/diabetes" method="post">
+        <input name="f1" placeholder="Pregnancies" required>
+        <input name="f2" placeholder="Glucose" required>
+        <input name="f3" placeholder="BloodPressure" required>
+        <input name="f4" placeholder="SkinThickness" required>
+        <input name="f5" placeholder="Insulin" required>
+        <input name="f6" placeholder="BMI" required>
+        <input name="f7" placeholder="DiabetesPedigreeFunction" required>
+        <input name="f8" placeholder="Age" required>
+        <button type="submit">Predict</button>
+    </form>
+    
+    <h1>Heart Disease</h1>
+    <form action="/predict/heart" method="post">
+        <input name="f1" placeholder="age" required>
+        <input name="f2" placeholder="sex" required>
+        <input name="f3" placeholder="cp" required>
+        <input name="f4" placeholder="trestbps" required>
+        <input name="f5" placeholder="chol" required>
+        <input name="f6" placeholder="fbs" required>
+        <input name="f7" placeholder="restecg" required>
+        <input name="f8" placeholder="thalach" required>
+        <input name="f9" placeholder="exang" required>
+        <input name="f10" placeholder="oldpeak" required>
+        <input name="f11" placeholder="slope" required>
+        <input name="f12" placeholder="ca" required>
+        <input name="f13" placeholder="thal" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{result}}</h3>
+</body>
+</html>
